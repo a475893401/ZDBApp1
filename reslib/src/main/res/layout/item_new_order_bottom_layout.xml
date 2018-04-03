@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_hg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/layout_height_wrap_content"
+        android:background="@color/main_hg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="贺卡及备注"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:background="@color/withe"
+        android:paddingLeft="@dimen/px_16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="贺卡留言："
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/card_msg"
+            style="@style/layout_height_wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="请填写贺卡"
+            android:text=""
+            android:textColor="@color/text_color_333"
+            android:textColorHint="@color/text_color_666"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:background="@color/withe"
+        android:paddingLeft="@dimen/px_16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单备注："
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/order_msg"
+            style="@style/layout_height_wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="请填写订单备注"
+            android:text=""
+            android:textColor="@color/text_color_333"
+            android:textColorHint="@color/text_color_666"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_16"
+        android:background="@color/withe"
+        android:paddingLeft="@dimen/px_16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="意向价格："
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:maxLines="1"
+            android:inputType="phone"
+            android:id="@+id/order_money"
+            style="@style/layout_height_wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="请填写发单金额"
+            android:text=""
+            android:textColor="@color/red"
+            android:textColorHint="@color/text_color_666"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            style="@style/layout_height_wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/divider_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/text_color_333"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="是否抢单模式派送"
+                android:textSize="@dimen/text_size_16" />
+
+            <CheckBox
+                android:id="@+id/bill_order_mode_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:drawableRight="@drawable/bill_order_mobe_selector"
+                android:padding="@dimen/px_4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/grab_date_layout"
+            style="@style/layout_height_wrap_content"
+            android:layout_marginTop="@dimen/divider_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="抢单截止："
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/grab_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableRight="@mipmap/app_go_back"
+                android:hint="请选择抢单截止时间"
+                android:textColor="@color/text_color_333"
+                android:textColorHint="@color/text_color_666"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jiedan_layout"
+            style="@style/layout_height_wrap_content"
+            android:layout_marginTop="@dimen/divider_height"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="接单店铺："
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/bill_shop_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableRight="@mipmap/app_go_back"
+                android:hint="请选择接单店铺"
+                android:textColor="@color/red"
+                android:textColorHint="@color/text_color_666"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

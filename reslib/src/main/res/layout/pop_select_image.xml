@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/pop_bg_show_style"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/pop_photo_check_img"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/pop_bt_background"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="查看头像"
+        android:textColor="@color/withe"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/pop_photo_image"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/pop_bt_background"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="相机拍照"
+        android:textColor="@color/withe"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/pop_camera_image"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pop_bt_background"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="相册选图"
+        android:textColor="@color/withe"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/pop_back_callimage"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pop_bt_background"
+        android:shadowColor="#2385CD"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="取消"
+        android:textColor="@color/withe"
+        android:textSize="16sp" />
+</LinearLayout>

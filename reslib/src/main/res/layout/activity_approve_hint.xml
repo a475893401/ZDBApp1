@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        style="@style/layout_height_wrap_content"
+        android:background="@color/withe">
+
+        <TextView
+            android:gravity="center"
+            android:text="营业执照上传说明"
+            android:layout_marginBottom="@dimen/px_30"
+            android:layout_marginTop="@dimen/px_60"
+            android:textColor="@color/text_color_333"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/main_hg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_2"/>
+
+        <TextView
+            android:lineSpacingMultiplier="1.2"
+            android:text="1、请上传清晰的证件扫描件或照片，执照上注册编号、法人、经营范围、有效期等信息清晰可见。"
+            android:layout_marginTop="@dimen/px_30"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/img_approve_com"
+            android:layout_marginTop="@dimen/px_30"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:gravity="center"
+            android:text="食品许可证上传说明"
+            android:layout_marginBottom="@dimen/px_30"
+            android:layout_marginTop="@dimen/px_60"
+            android:textColor="@color/text_color_333"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/main_hg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_2"/>
+
+        <TextView
+            android:lineSpacingMultiplier="1.2"
+            android:text="1、蛋糕食品类店铺必须上传食品卫生许可类资质。如：食品流通许可证或餐饮许可证书。"
+            android:layout_marginTop="@dimen/px_30"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:lineSpacingMultiplier="1.2"
+            android:text="\n2、上传的证件必须保持清晰可见，证件上各项信息有效且易识别。"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/img_approve_food"
+            android:layout_marginTop="@dimen/px_30"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:gravity="center"
+            android:text="认证公函上传说明"
+            android:layout_marginBottom="@dimen/px_30"
+            android:layout_marginTop="@dimen/px_60"
+            android:textColor="@color/text_color_333"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/main_hg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_2"/>
+
+        <TextView
+            android:lineSpacingMultiplier="1.2"
+            android:text="1、店主与营业执照法人不一致时，必须上传取得营业执照法人授权的委托书(认证公函)。"
+            android:layout_marginTop="@dimen/px_30"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:lineSpacingMultiplier="1.2"
+            android:text="\n2、认证公函必须由营业执照法人出具签字盖章，运管店主签字方可生效，杜绝伪造杜撰公函，一经发现将严肃处理。"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@mipmap/img_approve_other"
+            android:layout_marginTop="@dimen/px_30"
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@color/home_bar_text_push"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_84">
+
+        <TextView
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/order_info_back"
+            android:drawablePadding="@dimen/px_6"
+            android:paddingLeft="@dimen/px_10"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/nvs_top_text_color"
+            android:text=""
+            android:drawableLeft="@mipmap/img_back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.lhh.apst.library.CustomPagerSlidingTabStrip
+            android:layout_centerInParent="true"
+            android:id="@+id/order_top_tab"
+            app:apTabIndicatorHeight="0dp"
+            app:apTabShouldExpand="true"
+            android:background="@mipmap/orders_bg_all"
+            android:layout_width="wrap_content"
+            android:fillViewport="false"
+            android:layout_height="@dimen/px_60"/>
+
+        <TextView
+            android:id="@+id/bill_but"
+            android:visibility="gone"
+            android:drawablePadding="@dimen/px_8"
+            android:padding="@dimen/px_8"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/img_bill_order"
+            android:layout_alignParentRight="true"
+            android:text="发单"
+            android:textColor="@color/withe"
+            android:textSize="@dimen/text_size_16"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

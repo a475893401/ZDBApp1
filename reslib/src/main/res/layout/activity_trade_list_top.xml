@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_88"
+        android:background="#ededed">
+
+        <com.lhh.apst.library.AdvancedPagerSlidingTabStrip
+            android:id="@+id/trade_list_top_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_86"
+            android:background="#fff"
+            android:fillViewport="false"
+            app:apTabDividerColor="#2383cd"
+            app:apTabIndicatorColor="#2383cd"
+            app:apTabIndicatorHeight="1dp"
+            app:apTabUnderlineColor="#2383cd"
+            app:apTabUnderlineHeight="0dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/trade_top_hint"
+        android:gravity="center_vertical"
+        android:text="近3个月订单交易明细"
+        android:background="@color/main_hg"
+        android:textColor="@color/text_color_666"
+        android:textSize="@dimen/text_size_16"
+        style="@style/layout_height_40" />
+
+    <app.zhuandanbao.com.reslib.widget.MyViewPager
+        android:id="@+id/trade_top_viewpager"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/order_source"
+        android:layout_marginTop="@dimen/divider_height"
+        style="@style/layout_height_wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="订单来源"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/order_amount"
+        android:layout_marginTop="@dimen/divider_height"
+        style="@style/layout_height_wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="订单金额"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/order_zdb_sn"
+        android:drawableRight="@mipmap/app_go_back"
+        android:layout_marginTop="@dimen/divider_height"
+        style="@style/layout_height_wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="转单单号"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/order_jiedan"
+        android:drawableRight="@mipmap/app_go_back"
+        android:layout_marginTop="@dimen/divider_height"
+        style="@style/layout_height_wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="接单方"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:gravity="center_vertical"
+        android:text="配送信息"
+        android:textColor="@color/text_color_333"
+        android:background="@color/main_hg"
+        style="@style/layout_height_40"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/order_dv_type"
+        android:layout_marginTop="@dimen/divider_height"
+        style="@style/layout_height_wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="配送方式"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:lineSpacingMultiplier="1.2"
+        android:id="@+id/order_dv_time"
+        android:layout_marginTop="@dimen/divider_height"
+        style="@style/layout_height_wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="配送时间"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/divider_height"
+        style="@style/layout_height_wrap_content">
+        <TextView
+            android:id="@+id/order_take_name"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="收货人:覺得靜靜地"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/order_take_mobile"
+            android:layout_weight="0.6"
+            android:drawableLeft="@mipmap/phone"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="15656555555"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <TextView
+        android:lineSpacingMultiplier="1.2"
+        android:id="@+id/order_dv_address"
+        android:layout_marginTop="@dimen/divider_height"
+        style="@style/layout_height_wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="配送地址"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/order_msg_info"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginTop="@dimen/divider_height"
+        style="@style/layout_height_wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="订单备注"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/order_card_msg"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginTop="@dimen/divider_height"
+        style="@style/layout_height_wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="订单贺卡"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/order_shop_msg"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginTop="@dimen/divider_height"
+        style="@style/layout_height_wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="商家备注"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+    <TextView
+        android:gravity="center_vertical"
+        android:text="商品信息"
+        android:textColor="@color/text_color_333"
+        android:background="@color/main_hg"
+        style="@style/layout_height_40"
+        android:textSize="@dimen/text_size_16" />
+</LinearLayout>

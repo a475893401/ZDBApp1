@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <app.zhuandanbao.com.reslib.widget.TabPagerIndicator
+        android:background="#ededed"
+        android:id="@+id/info_tabPagerIndicator"
+        android:layout_width="match_parent"
+        app:pstsDividerColor="@android:color/transparent"
+        app:pstsIndicatorColor="@color/text_color_333"
+        android:layout_height="@dimen/px_90"/>
+
+    <app.zhuandanbao.com.reslib.widget.MyViewPager
+        android:layout_weight="1"
+        android:id="@+id/info_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </app.zhuandanbao.com.reslib.widget.MyViewPager>
+
+</LinearLayout>

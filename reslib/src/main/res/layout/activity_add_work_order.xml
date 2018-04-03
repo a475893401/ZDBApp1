@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/layout_height_wrap_content"
+        android:background="@color/withe"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工单类型："
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/text_size_16" />
+
+        <Spinner
+            android:id="@+id/work_order_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/withe" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/app_go_back" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:background="@color/withe"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="问题类型："
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/text_size_16" />
+
+        <Spinner
+            android:id="@+id/work_order_quest_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/withe" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/app_go_back" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/work_order_shop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:background="@color/withe"
+        android:paddingLeft="@dimen/px_16"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投诉店铺："
+            android:textColor="#999"
+            android:textSize="16sp" />
+
+        <EditText
+            android:textColor="@color/text_color_333"
+            android:id="@+id/work_order_shop"
+            style="@style/layout_height_wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入投诉的店铺名称或店主手机号"
+            android:textColorHint="@color/text_color_999"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:background="@color/withe"
+        android:paddingLeft="@dimen/px_16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="问题描述："
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:textColor="@color/text_color_333"
+            android:id="@+id/work_order_quest_dsc"
+            style="@style/layout_height_wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入问题描述"
+            android:textColorHint="@color/text_color_999"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:background="@color/withe"
+        android:paddingLeft="@dimen/px_16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="手机号码："
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:textColor="@color/text_color_333"
+            android:id="@+id/work_order_quest_phone"
+            style="@style/layout_height_wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:textColorHint="@color/text_color_999"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_height_wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_16"
+            android:text="(可上传三个附件，每个附件小于2M)"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_14" />
+
+        <include layout="@layout/item_recycler_img" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/work_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_blue_bg"
+            android:gravity="center"
+            android:text="确认提交"
+            android:textColor="@color/withe"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+</LinearLayout>

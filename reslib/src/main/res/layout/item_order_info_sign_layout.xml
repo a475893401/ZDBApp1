@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/sign_layout"
+    android:visibility="gone"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="@dimen/px_16"
+        android:text="签收信息"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16"
+        style="@style/layout_height_wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="@color/diver_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"/>
+
+    <LinearLayout
+        style="@style/layout_height_wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="签  收  人："
+           style="@style/text_16_999" />
+
+        <TextView
+            android:id="@+id/order_info_sign_info"
+            android:text="阿毛|2016-06-05 11:52"
+            android:layout_weight="1"
+           style="@style/text_16_333" />
+    </LinearLayout>
+    <View
+        android:background="@color/diver_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"/>
+    <TextView
+        android:text="签收凭证"
+        android:textColor="@color/text_color_999"
+        android:textSize="@dimen/text_size_16"
+        style="@style/layout_height_wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="@color/diver_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"/>
+    <android.support.v7.widget.RecyclerView
+        android:paddingRight="@dimen/px_16"
+        android:paddingLeft="@dimen/px_16"
+        android:background="@color/withe"
+        android:id="@+id/sign_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarStyle="outsideOverlay"
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        app:spanCount="4"
+        tools:listitem="@layout/list_item_image"/>
+</LinearLayout>

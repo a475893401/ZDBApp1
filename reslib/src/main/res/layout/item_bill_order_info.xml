@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/main_hg"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="@dimen/px_16"
+        style="@style/layout_height_wrap_content"
+        android:id="@+id/bill_info_dv_time_type"
+        android:text=""
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:layout_marginTop="@dimen/divider_height"
+        style="@style/layout_height_wrap_content"
+        android:id="@+id/bill_info_dv_time"
+        android:text=""
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <LinearLayout
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/px_16"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/bill_info_consignee"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/bill_info_phone"
+            android:layout_width="wrap_content"
+            android:drawableLeft="@mipmap/phone"
+            android:maxLength="11"
+            android:text=""
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <TextView
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginTop="@dimen/divider_height"
+        style="@style/layout_height_wrap_content"
+        android:id="@+id/bill_info_dv_address"
+        android:text="配送地址"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/px_16"
+        style="@style/layout_height_wrap_content"
+        android:id="@+id/bill_info_order_card"
+        android:text="订单贺卡"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/px_16"
+        style="@style/layout_height_wrap_content"
+        android:id="@+id/bill_info_order_msg"
+        android:text="订单备注"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <LinearLayout
+        android:id="@+id/bill_info_grab_time_layout"
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:background="@color/withe">
+
+        <app.zhuandanbao.com.reslib.widget.TimeTextView
+            android:textColor="@color/text_color_666"
+            android:id="@+id/bill_info_grab_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px_16"
+            android:background="@drawable/grab_finish_order_hg"
+            android:gravity="center"
+            android:text="停止抢单"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="visible" />
+    </LinearLayout>
+    <include layout="@layout/item_order_info_kind_layout"/>
+    <include layout="@layout/item_order_info_sign_layout"/>
+
+</LinearLayout>

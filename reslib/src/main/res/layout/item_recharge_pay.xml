@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="@dimen/divider_height"
+    style="@style/layout_height_wrap_content">
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:scaleType="centerInside"
+        android:src="@mipmap/img_alipay"
+        android:padding="@dimen/px_4"
+        android:layout_width="@dimen/px_100"
+        android:layout_height="@dimen/px_100" />
+
+    <TextView
+        android:id="@+id/item_content"
+        android:layout_marginLeft="@dimen/px_16"
+        android:drawableRight="@mipmap/app_go_back"
+        android:layout_weight="1"
+        android:text="支付宝"
+        android:textSize="20sp"
+        android:textColor="@color/text_color_333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

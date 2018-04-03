@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginTop="@dimen/divider_height"
+    style="@style/layout_height_wrap_content">
+
+    <LinearLayout
+        android:padding="@dimen/px_4"
+        android:orientation="vertical"
+        android:layout_width="@dimen/px_160"
+        android:layout_height="@dimen/px_160">
+        <cn.bingoogolapple.bgabanner.BGABanner
+            android:id="@+id/item_img"
+            style="@style/item_BannerDefaultStyle"
+            app:banner_isNeedShowIndicatorOnOnlyOnePage="false"
+            app:banner_numberIndicatorBackground="@drawable/yuan_shape"
+            app:banner_pointContainerBackground="@android:color/transparent"
+            app:banner_pointContainerLeftRightPadding="0dp"
+            app:banner_transitionEffect="alpha" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingRight="@dimen/px_16"
+        android:paddingLeft="@dimen/px_16"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_goods_name"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_goods_dsc"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_goods_num"
+        android:text="x 1"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_size_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

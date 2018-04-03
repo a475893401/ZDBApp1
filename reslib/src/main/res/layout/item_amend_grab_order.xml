@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_hg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/layout_height_wrap_content"
+        android:background="@color/withe"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="派单价格"
+            android:textSize="@dimen/text_size_14" />
+
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/bill_order_amend_grab_money"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_80"
+            android:layout_marginTop="@dimen/px_12"
+            android:background="@drawable/bill_button_cancel_hg_shape"
+            android:drawablePadding="@dimen/px_8"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/px_12"
+            android:paddingRight="@dimen/px_12"
+            android:text="300.00"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_height_wrap_content"
+        android:background="@color/withe"
+        android:layout_marginTop="@dimen/divider_height"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="抢单截止时间"
+            android:textSize="@dimen/text_size_14" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/px_12"
+            android:id="@+id/bill_order_amend_grab_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/withe"
+            android:orientation="horizontal">
+
+            <app.zhuandanbao.com.reslib.widget.time.WheelView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <app.zhuandanbao.com.reslib.widget.time.WheelView
+                android:id="@+id/month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <app.zhuandanbao.com.reslib.widget.time.WheelView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <app.zhuandanbao.com.reslib.widget.time.WheelView
+                android:id="@+id/hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <app.zhuandanbao.com.reslib.widget.time.WheelView
+                android:id="@+id/min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_height_wrap_content"
+        android:background="@color/withe"
+        android:layout_marginTop="@dimen/divider_height"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入支付密码"
+            android:textSize="@dimen/text_size_14" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/bill_order_amend_grab_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_80"
+            android:layout_marginTop="@dimen/px_12"
+            android:background="@drawable/pass_hg"
+            android:drawablePadding="@dimen/px_8"
+            android:paddingLeft="@dimen/px_12"
+            android:paddingRight="@dimen/px_12"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/px_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_12"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码？"
+            android:textSize="@dimen/text_size_14" />
+
+
+        <TextView
+            android:id="@+id/bill_order_amend_grab_forget_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_8"
+            android:padding="@dimen/px_8"
+            android:text="找回密码"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bill_order_amend_grab_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginTop="@dimen/px_12"
+        android:text=""
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_size_16"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_margin="@dimen/px_16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_80"
+        android:layout_marginTop="@dimen/px_16">
+
+        <TextView
+            android:id="@+id/bill_order_amend_grab_amend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_blue_2_bg"
+            android:gravity="center"
+            android:text="立即修改"
+            android:textColor="@color/withe"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+</LinearLayout>

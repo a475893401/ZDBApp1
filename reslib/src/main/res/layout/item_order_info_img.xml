@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/px_100"
+        android:layout_height="@dimen/px_100"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/app_defant"
+        android:visibility="visible" />
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="@dimen/px_100"
+        android:layout_height="@dimen/px_100"
+        android:layout_centerInParent="true"
+        android:background="@drawable/more_sku_check_shape"
+        android:gravity="bottom|right">
+        <ImageView
+            android:id="@+id/show_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/more_sku_check"
+            android:visibility="visible" />
+    </LinearLayout>
+</FrameLayout>

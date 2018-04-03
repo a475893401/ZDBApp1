@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/withe"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/px_20"
+    android:paddingBottom="@dimen/px_20"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/main_shop_exit_login"
+        android:layout_width="@dimen/px_300"
+        android:layout_height="@dimen/px_90"
+        android:background="@drawable/btn_blue_bg"
+        android:text="退出登录"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+</LinearLayout>

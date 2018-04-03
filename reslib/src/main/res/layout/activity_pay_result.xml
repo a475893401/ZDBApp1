@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_hg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/layout_height_wrap_content"
+        android:layout_marginBottom="@dimen/px_20"
+        android:paddingTop="@dimen/px_70"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/pay_result_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/a_finance_pay_fail" />
+
+        <TextView
+            android:id="@+id/pay_result_hint"
+            android:layout_marginTop="@dimen/px_20"
+            android:text="充值失败"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_18" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/divider_height"
+        android:gravity="center_vertical"
+        style="@style/layout_height_40">
+
+        <TextView
+            android:text="充值金额"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/text_size_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/pay_result_money"
+            android:layout_alignParentRight="true"
+            android:text="￥ 10"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/divider_height"
+        android:gravity="center_vertical"
+        style="@style/layout_height_40">
+
+        <TextView
+            android:text="充值单号"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/text_size_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/pay_result_code"
+            android:layout_alignParentRight="true"
+            android:text="45112125652323233"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/layout_height_wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/px_20">
+
+        <Button
+            android:id="@+id/pay_result_but_cancel"
+            android:layout_marginRight="@dimen/px_10"
+            android:layout_weight="1"
+            android:text="取消充值"
+            android:textColor="@color/withe"
+            android:textSize="@dimen/text_size_16"
+            android:background="@drawable/btn_blue_2_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_80" />
+        <Button
+            android:id="@+id/pay_result_but_ok"
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_weight="1"
+            android:text="继续充值"
+            android:textColor="@color/withe"
+            android:textSize="@dimen/text_size_16"
+            android:background="@drawable/shape_hg_red"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_80" />
+    </LinearLayout>
+
+</LinearLayout>

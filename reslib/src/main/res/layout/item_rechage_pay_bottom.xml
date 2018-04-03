@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    style="@style/layout_height_wrap_content">
+
+    <TextView
+        android:text="温馨提示"
+        android:textSize="@dimen/text_size_18"
+        android:textColor="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginTop="@dimen/px_16"
+        android:text="1、充值成功后，网络状况不佳时余额显示可能存在延迟，一般1到5分钟会内到账，如有疑问，请咨询转单宝客服。\n2、充值金额须不小于10且为10的整数倍。"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:lineSpacingMultiplier="1.2"
+        android:text="3、充值用于转发订单，账户提现须完成店铺认证。\n4、转单宝禁止恶意充值套现行为，如有发现将严肃处理。"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_size_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

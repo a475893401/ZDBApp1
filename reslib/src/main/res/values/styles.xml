@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--apTabUnderlineColor Tab底部下划线的颜色-->
+    <!--apTabDividerColor 每个Tab之间的分割线颜色-->
+    <!--apTabstabTextSelectColor 被选中的Tab的文本字体颜色-->
+    <!--apTabIndicatorHeight 导航条的高度-->
+    <!--apTabUnderlineHeight Tab底部下划线的高度-->
+    <!--apTabDividerPadding Tab分割线的padding-->
+    <!--apTabPaddingLeftRight 每个Tab的左右padding-->
+    <!--apTabPaddingTopBottom 每个Tab的上下padding-->
+    <!--apTabScrollOffset 选中tab的滑动offset-->
+    <!--apTabBackground tab的背景-->
+    <!--apTabShouldExpand 伸缩情况，如果为真，每个tab都是相同的weight，默认是false-->
+    <!--apTabTextAllCaps Tab的文字是否为全部大写，如果是true就全部大写，默认为true-->
+    <!--apTabTextSelectColor 你所选择的那个tab的颜色-->
+    <!--apTabDrawMode 绘制模式，text或者normal，用于是否将下划线绘制为跟随TextView-->
+
+    <style name="AppTheme" parent="AppTheme.Base"></style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/accent_material_dark</item>
+        <!--Status bar color-->
+        <item name="colorPrimaryDark">@color/accent_material_light</item>
+        <!--Window color-->
+        <item name="android:windowBackground">@color/foreground_material_dark</item>
+
+        <item name="android:textColorPrimary">@color/text_color_999</item>
+        <item name="android:textColorSecondary">@color/text_color_999</item>
+        <item name="android:textColorTertiary">@color/text_color_999</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+
+    <style name="left_and_right_padding">
+        <item name="android:paddingLeft">@dimen/px_16</item>
+        <item name="android:paddingRight">@dimen/px_20</item>
+    </style>
+
+    <style name="left_and_right_margin">
+        <item name="android:layout_marginLeft">@dimen/px_16</item>
+        <item name="android:layout_marginRight">@dimen/px_20</item>
+    </style>
+
+    <style name="layout_height_40" parent="left_and_right_padding">
+        <item name="android:background">@color/withe</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px_80</item>
+    </style>
+
+    <style name="layout_height_wrap_content" parent="left_and_right_padding">
+        <item name="android:background">@color/withe</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/px_20</item>
+        <item name="android:paddingBottom">@dimen/px_20</item>
+    </style>
+
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pop_enter</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+
+    <style name="text_main_w_h_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="text_main_w_h_match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="text_14_999" parent="text_main_w_h_wrap">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/text_color_999</item>
+    </style>
+
+    <style name="text_14_666" parent="text_main_w_h_wrap">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/text_color_666</item>
+    </style>
+
+    <style name="text_14_333" parent="text_main_w_h_wrap">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/text_color_333</item>
+    </style>
+
+    <style name="text_16_333" parent="text_main_w_h_wrap">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/text_color_333</item>
+    </style>
+
+    <style name="text_16_999" parent="text_main_w_h_wrap">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/text_color_999</item>
+    </style>
+
+    <style name="text_16_666" parent="text_main_w_h_wrap">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/text_color_666</item>
+    </style>
+
+    <style name="BannerDefaultStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- 自定义属性在styles.xml中不需要命名空间,直接用属性名就可以了 -->
+        <!-- 开启自动轮播 -->
+        <item name="banner_pointAutoPlayAble">true</item>
+        <!-- 自动轮播的时间间隔 -->
+        <item name="banner_pointAutoPlayInterval">3000</item>
+        <!-- 指示点容器背景 -->
+        <item name="banner_pointContainerBackground">@android:color/transparent</item>
+        <!-- 指示点背景 -->
+        <item name="banner_pointDrawable">@drawable/point_red_selector</item>
+        <!-- 指示点容器左右内间距 -->
+        <item name="banner_pointContainerLeftRightPadding">@dimen/px_16</item>
+        <!-- 指示点上下外间距 -->
+        <item name="banner_pointTopBottomMargin">@dimen/px_4</item>
+        <!-- 指示点左右外间距 -->
+        <item name="banner_pointLeftRightMargin">@dimen/px_16</item>
+        <!-- 指示器的位置 -->
+        <item name="banner_indicatorGravity">top|right</item>
+        <!-- 页码切换过程的时间长度 -->
+        <item name="banner_pageChangeDuration">800</item>
+        <!-- 提示文案的文字大小 -->
+        <item name="banner_tipTextSize">@dimen/text_size_16</item>
+        <!-- 是否是数字指示器 -->
+        <item name="banner_isNumberIndicator">false</item>
+        <!-- 提示文案的文字颜色 -->
+        <item name="banner_tipTextColor">@color/red</item>
+        <!-- 加载网络数据时覆盖在BGABanner最上层的占位图 -->
+        <!--<item name="banner_placeholderDrawable">@mipmap/vnasi_download_background</item>-->
+    </style>
+
+    <style name="item_BannerDefaultStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <!-- 自定义属性在styles.xml中不需要命名空间,直接用属性名就可以了 -->
+        <!-- 开启自动轮播 -->
+        <item name="banner_pointAutoPlayAble">false</item>
+        <!-- 自动轮播的时间间隔 -->
+        <item name="banner_pointAutoPlayInterval">3000</item>
+        <!-- 指示点容器背景 -->
+        <item name="banner_pointContainerBackground">@android:color/transparent</item>
+        <!-- 指示点背景 -->
+        <item name="banner_pointDrawable">@drawable/point_red_selector</item>
+        <!-- 指示点容器左右内间距 -->
+        <item name="banner_pointContainerLeftRightPadding">@dimen/px_12</item>
+        <!-- 指示点上下外间距 -->
+        <item name="banner_pointTopBottomMargin">@dimen/px_8</item>
+        <!-- 指示点左右外间距 -->
+        <item name="banner_pointLeftRightMargin">@dimen/px_8</item>
+        <!-- 指示器的位置 -->
+        <item name="banner_indicatorGravity">bottom|center_horizontal</item>
+        <!-- 页码切换过程的时间长度 -->
+        <item name="banner_pageChangeDuration">800</item>
+        <!-- 提示文案的文字大小 -->
+        <item name="banner_tipTextSize">@dimen/text_size_16</item>
+        <!-- 是否是数字指示器 -->
+        <item name="banner_isNumberIndicator">false</item>
+        <!-- 提示文案的文字颜色 -->
+        <item name="banner_tipTextColor">@color/red</item>
+        <!-- 加载网络数据时覆盖在BGABanner最上层的占位图 -->
+        <item name="banner_placeholderDrawable">@mipmap/app_defant</item>
+    </style>
+
+    <style name="fullDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="bill_order_info_but">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/withe</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+<!--启动页面小圆点-->
+    <style name="dot_style">
+        <item name="android:layout_width">5dip</item>
+        <item name="android:layout_height">5dip</item>
+        <item name="android:background">@drawable/drawable_point_indicator</item>
+        <item name="android:layout_marginLeft">1.5dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginRight">1.5dip</item>
+    </style>
+</resources>

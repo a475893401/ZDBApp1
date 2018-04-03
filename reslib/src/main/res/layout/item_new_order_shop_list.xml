@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/divider_height"
+    android:background="@color/withe">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/px_16">
+
+        <LinearLayout
+            android:layout_width="@dimen/px_160"
+            android:layout_height="@dimen/px_160"
+            android:orientation="vertical"
+            android:padding="@dimen/px_4">
+
+            <cn.bingoogolapple.bgabanner.BGABanner
+                android:id="@+id/item_img"
+                style="@style/item_BannerDefaultStyle"
+                app:banner_isNeedShowIndicatorOnOnlyOnePage="false"
+                app:banner_numberIndicatorBackground="@drawable/yuan_shape"
+                app:banner_pointContainerBackground="@android:color/transparent"
+                app:banner_pointContainerLeftRightPadding="0dp"
+                app:banner_transitionEffect="alpha" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_8"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_goods_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:enabled="true"
+                    android:maxLines="1"
+                    android:text="商品，名称堅實的基督教點擊覺得就覺得基督教大家"
+                    android:textColor="@color/text_color_333"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/item_goods_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X1"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_16" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_goods_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/px_16"
+                android:layout_marginTop="@dimen/px_8"
+                android:ellipsize="end"
+                android:enabled="true"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:text="商品肯德基覺得看可了解到立即打開焦點科技看到就看見的看見的看見肯德基肯德基看到就看到監控覺得"
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/text_size_12" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right">
+
+        <ImageView
+            android:id="@+id/bill_delete"
+            android:layout_width="@dimen/px_60"
+            android:layout_height="@dimen/px_60"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_bill_delete" />
+
+    </RelativeLayout>
+
+</FrameLayout>

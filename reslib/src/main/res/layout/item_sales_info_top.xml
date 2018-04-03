@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/sales_top2"
+        android:visibility="gone"
+        android:background="@color/main_hg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/layout_height_40"
+            android:background="@color/main_hg"
+            android:gravity="center_vertical"
+            android:text="仲裁信息"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16" />
+
+        <LinearLayout
+            android:background="@color/withe"
+            android:orientation="vertical"
+            style="@style/layout_height_wrap_content">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/sales_top2_img_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/agree_img"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/sales_top2_tx_hint"
+                android:layout_marginTop="@dimen/px_16"
+                android:lineSpacingMultiplier="1.2"
+                android:text=""
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/text_size_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sales_top2_reson"
+            android:layout_marginTop="@dimen/divider_height"
+            android:text="拒绝理由"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16"
+            style="@style/layout_height_wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/sales_top2_time"
+            android:layout_marginTop="@dimen/divider_height"
+            android:text="拒绝时间"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16"
+            style="@style/layout_height_wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/sales_top2_des"
+            android:layout_marginTop="@dimen/divider_height"
+            android:text="仲裁说明"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16"
+            style="@style/layout_height_wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sales_top2_show_img"
+            android:layout_marginTop="@dimen/divider_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/withe"
+            android:choiceMode="singleChoice"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:paddingLeft="@dimen/px_16"
+            android:paddingRight="@dimen/px_16"
+            android:scrollbarStyle="outsideOverlay"
+            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            app:spanCount="4"
+            tools:listitem="@layout/list_item_image" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sales_top1"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/divider_height"
+        android:background="@color/main_hg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/layout_height_40"
+            android:background="@color/main_hg"
+            android:gravity="center_vertical"
+            android:text="受理信息"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16" />
+
+        <LinearLayout
+            android:background="@color/withe"
+            android:orientation="vertical"
+            style="@style/layout_height_wrap_content">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/agree_img"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/text_size_16"
+                android:id="@+id/sales_top1_img_hint" />
+
+            <TextView
+                android:id="@+id/sales_top1_tx_hint"
+                android:layout_marginTop="@dimen/px_16"
+                android:lineSpacingMultiplier="1.2"
+                android:text=""
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/text_size_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sales_top1_reson"
+            android:layout_marginTop="@dimen/divider_height"
+            android:text="拒绝理由"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16"
+            style="@style/layout_height_wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/sales_top1_time"
+            android:layout_marginTop="@dimen/divider_height"
+            android:text="拒绝时间"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16"
+            style="@style/layout_height_wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sales_top1_show_img"
+            android:layout_marginTop="@dimen/divider_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/withe"
+            android:choiceMode="singleChoice"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:paddingLeft="@dimen/px_16"
+            android:paddingRight="@dimen/px_16"
+            android:scrollbarStyle="outsideOverlay"
+            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            app:spanCount="4"
+            tools:listitem="@layout/list_item_image" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/layout_height_40"
+        android:background="@color/main_hg"
+        android:gravity="center_vertical"
+        android:text="售后信息"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/sales_info_order_sn"
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:text="订单编号"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/sales_info_order_amount"
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:text="订单金额"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/sales_info_money"
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:text="申请金额"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/sales_info_order_time"
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:text="申请时间"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/sales_info_order_type"
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:lineSpacingMultiplier="1.2"
+        android:text="退款类型"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/sales_info_order_reson"
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:text="退款理由"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <LinearLayout
+        android:id="@+id/sales_info_img_layout"
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_16"
+            android:text="退款凭证"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/text_size_16" />
+
+        <include layout="@layout/item_recycler_img" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sales_info_order_shop_name"
+        style="@style/layout_height_wrap_content"
+        android:layout_marginBottom="@dimen/px_16"
+        android:layout_marginTop="@dimen/px_16"
+        android:drawableRight="@mipmap/app_go_back"
+        android:text="发单店铺"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/order_info"
+        style="@style/layout_height_wrap_content"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/main_text_color"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/wuliu_com"
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:drawableRight="@mipmap/app_go_back"
+        android:text="物流公司"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <LinearLayout
+        android:paddingRight="@dimen/px_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:background="@color/withe"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运  单  号:"
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/wuliu_code"
+            style="@style/layout_height_wrap_content"
+            android:layout_weight="1"
+            android:hint="手输或扫描"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:textColor="@color/text_color_333"
+            android:textColorHint="@color/text_color_999"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/img_scan"
+            android:layout_width="@dimen/px_60"
+            android:layout_height="@dimen/px_60"
+            android:padding="@dimen/px_8"
+            android:src="@mipmap/img_scan" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_60"
+        android:padding="@dimen/px_16">
+
+        <include layout="@layout/but_layout_hg_bule" />
+    </LinearLayout>
+</LinearLayout>

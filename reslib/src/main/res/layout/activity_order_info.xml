@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <include layout="@layout/layout_super_recycler_view"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/but_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <include layout="@layout/but_layout_hg_white" />
+
+        <include layout="@layout/but_layout_hg_gray" />
+
+        <include layout="@layout/but_layout_hg_bule" />
+
+        <include layout="@layout/but_layout_hg_red" />
+
+    </LinearLayout>
+</LinearLayout>

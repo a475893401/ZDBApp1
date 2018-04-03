@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/order_info_money"
+            style="@style/text_16_333"
+            android:text=""
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/order_info_state"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="待抢单"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/order_bidding_info_money"
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:text=""
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/order_info_dv_time"
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:text=""
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16" />
+
+    <LinearLayout
+        android:id="@+id/order_info_goods_layout"
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/order_info_goods_name"
+            style="@style/text_16_333"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/order_info_goods_phone"
+            style="@style/text_16_666"
+            android:layout_width="wrap_content"
+            android:drawableLeft="@mipmap/phone"
+            android:drawablePadding="@dimen/px_8"
+            android:text=""
+            android:textColor="@color/main_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:lineSpacingMultiplier="1.2"
+            android:id="@+id/order_info_address"
+            style="@style/text_16_333"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="" />
+
+        <View
+            android:layout_width="@dimen/divider_height"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_8"
+            android:layout_marginRight="@dimen/px_8"
+            android:background="@color/text_color_999" />
+
+        <ImageView
+            android:id="@+id/order_info_gd_map"
+            android:layout_width="@dimen/px_100"
+            android:layout_height="@dimen/px_100"
+            android:gravity="right"
+            android:src="@mipmap/img_order_info_address" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/order_info_express_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/layout_height_wrap_content"
+            android:id="@+id/order_info_express_name"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_marginTop="@dimen/divider_height"
+            style="@style/layout_height_wrap_content"
+            android:id="@+id/order_info_express_sn"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/order_info_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red">
+
+        <app.zhuandanbao.com.reslib.widget.TimeTextView
+            android:paddingLeft="@dimen/px_16"
+            android:paddingRight="@dimen/px_16"
+            android:id="@+id/order_info_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/divider_height"
+            android:layout_marginTop="@dimen/divider_height"
+            android:background="@color/withe"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingBottom="@dimen/px_20"
+            android:paddingTop="@dimen/px_20"
+            android:text=""
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

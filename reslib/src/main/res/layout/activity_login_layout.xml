@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"
+        android:background="@mipmap/img_login_top_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <RadioGroup
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/login_account"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableBottom="@drawable/login_style_check_selector"
+                    android:gravity="center"
+                    android:text="账户密码登录"
+                    android:textColor="@color/withe"
+                    android:textSize="@dimen/text_size_16" />
+
+                <RadioButton
+                    android:id="@+id/login_mobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/login_style_check_selector"
+                    android:gravity="center"
+                    android:text="手机验证码登录"
+                    android:textColor="@color/withe"
+                    android:textSize="@dimen/text_size_16" />
+            </RadioGroup>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <app.zhuandanbao.com.reslib.widget.MyViewPager
+        android:id="@+id/login_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.55" />
+
+</LinearLayout>

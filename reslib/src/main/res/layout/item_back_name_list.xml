@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="@dimen/divider_height"
+    style="@style/layout_height_wrap_content">
+
+    <ImageView
+        android:id="@+id/img"
+        android:scaleType="centerInside"
+        android:src="@mipmap/app_defant"
+        android:layout_width="@dimen/px_70"
+        android:layout_height="@dimen/px_70" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_marginRight="@dimen/px_16"
+        android:layout_marginLeft="@dimen/px_16"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:button="@drawable/a_finance_bank_check"
+        android:padding="@dimen/px_10" />
+</LinearLayout>

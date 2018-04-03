@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/px_12"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:background="@color/withe"
+        style="@style/layout_height_40">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/withe"
+            android:text="1521326523232655"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/text_size_16"
+            android:id="@+id/order_sn" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/withe"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_14"
+            android:id="@+id/order_status_tx" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/divider_height"
+        style="@style/layout_height_wrap_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/order_shop_name"
+            android:text="发单店铺：“测试店铺” 因"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:background="@color/withe"
+            android:gravity="center_vertical"
+            android:text="就基督教大家覺得基督教的覺得基督教度假酒店覺得覺得覺得記得記得覺得基督教覺得覺得覺得"
+            android:layout_marginTop="@dimen/divider_height"
+            style="@style/layout_height_wrap_content"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_14"
+            android:id="@+id/order_content" />
+
+        <TextView
+            android:id="@+id/order_sale_type"
+            android:gravity="right"
+            android:text="向您申請：退一赔一"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/withe"
+        android:gravity="center_vertical"
+        style="@style/layout_height_40"
+        android:layout_marginTop="@dimen/divider_height"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/order_amount"
+            android:gravity="right"
+            android:text="交易金額："
+            android:layout_weight="1"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/order_return_amount"
+            android:layout_marginLeft="@dimen/px_16"
+            android:text="退款金額："
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

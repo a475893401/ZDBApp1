@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_hg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bill_order_one_to_one_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/px_16">
+
+            <EditText
+                android:textColorHint="@color/text_color_999"
+                android:id="@+id/input_shop"
+                style="@style/layout_height_wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bill_button_cancel_hg_shape"
+                android:hint="请输入花店名或电话"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_16" />
+
+            <Button
+                android:id="@+id/search_ok_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_60"
+                android:layout_marginLeft="@dimen/px_8"
+                android:background="@drawable/btn_blue_2_bg"
+                android:gravity="center"
+                android:text="查询"
+                android:textColor="@color/withe"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <include layout="@layout/layout_super_recycler_view"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/shop_ok_but"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_80"
+            android:background="@drawable/shape_hg_red"
+            android:text="确认"
+            android:textColor="@color/withe"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+</LinearLayout>

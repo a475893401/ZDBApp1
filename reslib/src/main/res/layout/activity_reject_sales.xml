@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/order_sn"
+        android:text="订单编号"
+        android:textColor="@color/main_text_color"
+        android:textSize="@dimen/text_size_16"
+        style="@style/layout_height_wrap_content" />
+
+    <LinearLayout
+        style="@style/layout_height_wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:padding="@dimen/px_16"
+            android:layout_width="match_parent"
+            android:id="@+id/input_content"
+            android:layout_marginTop="@dimen/divider_height"
+            android:layout_height="@dimen/px_240"
+            android:gravity="top"
+            android:hint="请输入拒绝退款原因"
+            android:textColorHint="@color/text_color_999"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16"
+            android:background="@drawable/gray_hg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginBottom="@dimen/px_20"
+            android:text="(可上传三个附件，每个附件小于2M)"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <include layout="@layout/item_recycler_img"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/px_60"
+        android:padding="@dimen/px_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/but_layout_hg_bule"/>
+
+    </LinearLayout>
+
+</LinearLayout>

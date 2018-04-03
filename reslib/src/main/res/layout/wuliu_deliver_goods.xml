@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_hg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/withe"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快递名称："
+            android:textColor="#999"
+            android:textSize="@dimen/text_size_16" />
+
+        <Spinner
+            android:id="@+id/wuliu_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/withe"
+            android:dropDownWidth="100dp"
+            android:gravity="left" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:src="@mipmap/app_go_back" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/withe"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快递单号："
+            android:textColor="#999"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:textColor="@color/text_color_333"
+            android:hint="请输入物流单号"
+            style="@style/layout_height_wrap_content"
+            android:id="@+id/wuliu_code"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:paddingLeft="4dp"
+            android:text=""
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/wuliu_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="必填"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

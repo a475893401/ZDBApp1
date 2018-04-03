@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_hg"
+    android:padding="@dimen/divider_height"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:padding="@dimen/px_16"
+        android:id="@+id/reason_input"
+        android:text=""
+        android:lineSpacingMultiplier="1.2"
+        android:gravity="top"
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_16"
+        android:hint="拒绝原因"
+        android:background="@color/withe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_240" />
+
+</LinearLayout>

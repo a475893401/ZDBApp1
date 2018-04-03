@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_160"
+        android:background="@color/withe">
+
+        <com.lhh.apst.library.CustomPagerSlidingTabStrip
+            android:id="@+id/help_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/divider_height"
+            android:background="@color/withe"
+            app:apTabDividerColor="@color/withe"
+            app:apTabIndicatorHeight="0dp"
+            app:apTabBackground="@drawable/nvs_tab_bg_normal"
+            app:apTabUnderlineColor="#fff" />
+    </LinearLayout>
+
+    <app.zhuandanbao.com.reslib.widget.MyViewPager
+        android:id="@+id/help_viewpager"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </app.zhuandanbao.com.reslib.widget.MyViewPager>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/px_4"
+        android:background="@color/withe"
+        android:layout_height="@dimen/px_100"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_margin="@dimen/px_8"
+            android:drawablePadding="@dimen/px_6"
+            android:drawableTop="@mipmap/img_help_mobile"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="客服热线"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_px_24"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/help_mobile" />
+
+        <TextView
+            android:id="@+id/help_online"
+            android:layout_margin="@dimen/px_8"
+            android:drawablePadding="@dimen/px_6"
+            android:drawableTop="@mipmap/img_help_online"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="在线客服"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_px_24"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/help_workorder"
+            android:layout_margin="@dimen/px_8"
+            android:drawablePadding="@dimen/px_6"
+            android:drawableTop="@mipmap/img_help_workorder"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="提交工单"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_px_24"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</LinearLayout>

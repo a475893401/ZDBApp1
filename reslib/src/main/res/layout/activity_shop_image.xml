@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/withe"
+        android:orientation="vertical"
+        android:padding="@dimen/px_16">
+
+        <include layout="@layout/layout_super_recycler_view" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_16"
+            android:lineSpacingMultiplier="1.2"
+            android:text="1.最多只能上传5张照片。\n2.支持图片格式:JPG/JPEG/PNG。\n3.上传图片大小不超过1M。"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+</ScrollView>

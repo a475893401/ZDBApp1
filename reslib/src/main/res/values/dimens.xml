@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="divider_height">@dimen/px_1</dimen>
+    <dimen name="tab_height">@dimen/px_104</dimen>
+    <dimen name="nvs_img_size">@dimen/px_58</dimen>
+    <dimen name="nvs_text_size">15sp</dimen>
+    <dimen name="nvs_title_size">20sp</dimen>
+    <dimen name="main_shop_list_size">@dimen/px_70</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_8">8sp</dimen>
+    <dimen name="but_height">@dimen/px_80</dimen>
+
+
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="pickerview_topbar_height">@dimen/px_88</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="pickerview_topbar_paddingleft">@dimen/px_20</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="pickerview_topbar_paddingright">@dimen/px_60</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="pickerview_topbar_btn_textsize">@dimen/px_40</dimen>
+    <dimen name="pickerview_topbar_title_textsize">@dimen/px_40</dimen>
+    <!-- 选项文字大小 需要配合 bools.xml 的 pickerview_customTextSize 为 true 才有效果-->
+    <dimen name="pickerview_textsize">@dimen/px_40</dimen>
+
+    <dimen name="shop_guide_60_dimen">@dimen/px_50</dimen>
+    <dimen name="shop_guide_38_dimen">@dimen/px_34</dimen>
+    <dimen name="shop_guide_28_dimen">@dimen/px_28</dimen>
+    <dimen name="shop_guide_23_dimen">@dimen/px_23</dimen>
+    <dimen name="shop_guide_42_dimen">@dimen/px_42</dimen>
+    <dimen name="text_size_px_24">@dimen/px_24</dimen>
+    <dimen name="text_size_px_28">@dimen/px_28</dimen>
+
+</resources>

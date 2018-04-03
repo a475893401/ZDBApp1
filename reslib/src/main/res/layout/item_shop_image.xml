@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.zhuandanbao.com.reslib.widget.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_hg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/divider_height">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/withe">
+
+        <ImageView
+            android:id="@+id/shop_image"
+            android:padding="@dimen/px_8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/withe"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/img_upload_hg" />
+    </LinearLayout>
+
+</app.zhuandanbao.com.reslib.widget.SquareLayout>

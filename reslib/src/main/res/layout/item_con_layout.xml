@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_hg"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:background="@color/withe"
+        android:text="你暂不符合抢单条件"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold" />
+
+    <app.zhuandanbao.com.reslib.widget.ListViewForScrollView
+        android:id="@+id/con_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider_height" />
+</LinearLayout>

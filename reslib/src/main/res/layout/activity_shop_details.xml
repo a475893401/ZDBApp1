@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 头部-->
+    <LinearLayout
+        style="@style/layout_height_wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/withe"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/px_140"
+            android:layout_height="@dimen/px_140">
+
+            <LinearLayout
+                android:layout_width="@dimen/px_140"
+                android:layout_height="@dimen/px_140">
+
+                <ImageView
+                    android:id="@+id/shop_detail_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/app_defant" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/px_140"
+                android:layout_height="@dimen/px_140"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shop_detail_yiye_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/red"
+                    android:gravity="center_horizontal"
+                    android:text="大量接单"
+                    android:textColor="@color/withe"
+                    android:textSize="@dimen/text_size_12" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_12"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/px_12"
+            android:paddingTop="@dimen/px_12">
+
+            <TextView
+                android:id="@+id/shop_detail_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="店铺名称"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16" />
+            <LinearLayout
+                android:layout_marginTop="@dimen/px_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="接单量："
+                        android:textColor="@color/text_color_999"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:id="@+id/shop_detail_jiedan_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1542"
+                        android:textColor="@color/main_text_color"
+                        android:textSize="@dimen/text_size_16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发单量："
+                        android:textColor="@color/text_color_999"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <TextView
+                        android:id="@+id/shop_detail_fadan_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1542"
+                        android:textColor="@color/main_text_color"
+                        android:textSize="@dimen/text_size_16" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginTop="@dimen/px_16"
+        android:background="#ededed">
+
+        <com.lhh.apst.library.AdvancedPagerSlidingTabStrip
+            android:id="@+id/shop_detail_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fff"
+            android:fillViewport="false"
+            app:apTabDividerColor="@color/black"
+            app:apTabIndicatorColor="#2383cd"
+            app:apTabIndicatorHeight="1dp"
+            app:apTabUnderlineColor="#2383cd"
+            app:apTabUnderlineHeight="0dp" />
+    </LinearLayout>
+
+    <app.zhuandanbao.com.reslib.widget.MyViewPager
+        android:id="@+id/shop_detail_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/divider_height"
+        android:layout_weight="1"
+        android:background="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.6dp"
+        android:background="@color/withe"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp">
+
+
+        <RadioButton
+            android:id="@+id/shop_detatil_xiadan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@mipmap/bill_img_no"
+            android:gravity="center"
+            android:text="立即下单"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_14" />
+
+        <RadioButton
+            android:id="@+id/shop_detatil_online_msg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@mipmap/img_online"
+            android:gravity="center"
+            android:text="在线沟通"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_14" />
+        <RadioButton
+            android:id="@+id/shop_detatil_complain"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@mipmap/complain_img"
+            android:gravity="center"
+            android:text="投诉举报"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_14" />
+        <RadioButton
+            android:id="@+id/shop_detatil_blacklist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/blacklist_selecter"
+            android:gravity="center"
+            android:text="加入黑名单"
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+</LinearLayout>

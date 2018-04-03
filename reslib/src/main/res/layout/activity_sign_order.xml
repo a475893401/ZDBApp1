@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sign_order_sn"
+        android:text="2523352222222"
+        android:textColor="@color/main_text_color"
+        android:textSize="@dimen/text_size_16"
+        style="@style/layout_height_wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/divider_height"
+        style="@style/layout_height_wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="签  收  人："
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/text_size_16" />
+
+        <RadioGroup
+            android:id="@+id/sign_name_rg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_4">
+
+            <RadioButton
+                android:id="@+id/sign_name_rb_self"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/a_finance_bank_check"
+                android:drawablePadding="@dimen/px_8"
+                android:text="本人签收"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/text_size_16" />
+
+            <RadioButton
+                android:id="@+id/sign_name_rb_others"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/a_finance_bank_check"
+                android:drawablePadding="@dimen/px_8"
+                android:text="他人代收"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/text_size_16" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/divider_height"
+        style="@style/layout_height_wrap_content">
+        <TextView
+            android:text="签收凭证："
+            android:textColor="@color/text_color_999"
+            android:textSize="@dimen/text_size_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="(最多可上传三个附件)"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/layout_height_wrap_content"
+        android:id="@+id/sign_order_hint"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginTop="@dimen/divider_height"
+        android:text="温馨提示：\n1、请上传签收单拍照或实物图，勿上传非相关图片。\n2、请勿在没有送达的情况下点击签收，送达前确认签收产生的交易纠纷由接单方承担。详情..."
+        android:textColor="@color/text_color_333"
+        android:textSize="@dimen/text_size_12" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/px_4"
+        android:paddingLeft="@dimen/px_16"
+        android:paddingRight="@dimen/px_16"
+        android:background="@color/withe"
+        android:id="@+id/img_sign_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarStyle="outsideOverlay"
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:listitem="@layout/list_item_image"/>
+
+    <LinearLayout
+        android:paddingRight="@dimen/px_16"
+        android:paddingLeft="@dimen/px_16"
+        android:layout_marginTop="@dimen/px_80"
+        style="@style/layout_height_40">
+
+        <include layout="@layout/layout_but_bule_hg"/>
+
+    </LinearLayout>
+
+</LinearLayout>

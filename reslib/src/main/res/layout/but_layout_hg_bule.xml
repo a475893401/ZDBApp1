@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:id="@+id/but_blue"
+        android:textColor="@color/withe"
+        android:textSize="@dimen/text_size_16"
+        android:text="拒绝接单"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/but_height"
+        android:background="@drawable/btn_blue_bg" />

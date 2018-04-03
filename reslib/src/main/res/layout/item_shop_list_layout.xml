@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/divider_height"
+    android:background="@color/withe">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/px_4">
+
+        <ImageView
+            android:id="@+id/shop_img"
+            android:layout_width="@dimen/px_160"
+            android:layout_height="@dimen/px_160"
+            android:padding="@dimen/px_4"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/app_defant" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_4"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shop_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:enabled="true"
+                    android:maxLines="1"
+                    android:text="店铺名称"
+                    android:textColor="@color/text_color_333"
+                    android:textSize="@dimen/text_size_14" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:id="@+id/shop_rz_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/bill_order_shop_list_item_shape">
+
+                        <TextView
+                            android:id="@+id/shop_rz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:background="#ff5619"
+                            android:text="已认证"
+                            android:textColor="@color/withe"
+                            android:textSize="8sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/shop_cx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#ff9700"
+                        android:padding="1dp"
+                        android:text="信"
+                        android:textColor="@color/withe"
+                        android:textSize="8sp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/shop_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_8"
+                android:drawableLeft="@mipmap/phone"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="153325643321"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/shop_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_8"
+                android:drawableLeft="@mipmap/bill_order_shop_list_item_address_img"
+                android:gravity="center_vertical"
+                android:text="店铺地址"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_check"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bill_order_shop_list_item_check" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_hg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/layout_height_wrap_content"
+        android:background="@color/main_hg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="配送信息"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/dv_style_rg"
+        style="@style/layout_height_wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/dv_style_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="送货上门"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16" />
+
+        <RadioButton
+            android:id="@+id/dv_style_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="快递配送"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16" />
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:id="@+id/dv_data_and_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/dv_date_layout"
+            style="@style/layout_height_wrap_content"
+            android:layout_marginTop="@dimen/divider_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="配送日期："
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/dv_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableRight="@mipmap/app_go_back"
+                android:hint="请选择配送日期"
+                android:textColor="@color/text_color_333"
+                android:textColorHint="@color/text_color_666"
+                android:textSize="@dimen/text_size_16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_height_wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/divider_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="自定义配送时间"
+                android:textColor="@color/text_color_333"
+                android:textSize="@dimen/text_size_16" />
+
+            <CheckBox
+                android:id="@+id/dv_mode_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="false"
+                android:drawableRight="@drawable/bill_order_mobe_selector"
+                android:padding="@dimen/px_4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dv_time_no_input_layout"
+            style="@style/layout_height_wrap_content"
+            android:layout_marginTop="@dimen/divider_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="配送时间："
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/dv_time_no_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableRight="@mipmap/app_go_back"
+                android:hint="请选择配送时间"
+                android:tag="-1"
+                android:textColor="@color/text_color_333"
+                android:textColorHint="@color/text_color_666"
+                android:textSize="@dimen/text_size_16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dv_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/divider_height"
+            android:background="@color/withe"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/px_16"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="配送时间："
+                android:textColor="@color/text_color_666"
+                android:textSize="@dimen/text_size_16" />
+
+            <EditText
+                android:id="@+id/dv_time"
+                style="@style/layout_height_wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="请输入配送时间"
+                android:paddingLeft="0dp"
+                android:tag="-1"
+                android:textColor="@color/text_color_333"
+                android:textColorHint="@color/text_color_666"
+                android:textSize="@dimen/text_size_16" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dv_city_layout"
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配送城市："
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/dv_show_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/app_go_back"
+            android:hint="请选择配送城市"
+            android:textColor="@color/text_color_333"
+            android:textColorHint="@color/text_color_666"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:background="@color/withe"
+        android:paddingLeft="@dimen/px_16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细地址："
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/dv_address"
+            style="@style/layout_height_wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="请填写配送详细地址"
+            android:paddingLeft="0dp"
+            android:text=""
+            android:textColor="@color/text_color_333"
+            android:textColorHint="@color/text_color_666"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:background="@color/withe"
+        android:paddingLeft="@dimen/px_16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收  货  人："
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/layout_height_wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="请填写收货人信息"
+            android:paddingLeft="0dp"
+            android:text=""
+            android:textColor="@color/text_color_333"
+            android:textColorHint="@color/text_color_666"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:background="@color/withe"
+        android:paddingLeft="@dimen/px_16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系电话："
+            android:textColor="@color/text_color_666"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/mobile"
+            style="@style/layout_height_wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="请填写收货人电话"
+            android:paddingLeft="0dp"
+            android:text=""
+            android:textColor="@color/text_color_333"
+            android:textColorHint="@color/text_color_666"
+            android:textSize="@dimen/text_size_16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="@dimen/divider_height"
+        android:background="@color/main_hg"
+        android:paddingLeft="@dimen/px_16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品信息"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="（点击商品可修改）"
+            android:textColor="@color/text_color_333"
+            android:textSize="@dimen/text_size_12" />
+
+        <Button
+            android:id="@+id/add_goods"
+            android:layout_width="@dimen/px_100"
+            android:layout_height="@dimen/px_60"
+            android:background="@drawable/btn_blue_2_bg"
+            android:gravity="center"
+            android:text=" + 添加"
+            android:textColor="@color/withe"
+            android:textColorHint="@color/text_color_666"
+            android:textSize="@dimen/text_size_12" />
+
+    </LinearLayout>
+</LinearLayout>

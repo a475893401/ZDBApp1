@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout style="@style/layout_height_wrap_content">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/bill_info_order_sn"
+            android:text="5225322233332"
+            android:textColor="@color/main_text_color"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/bill_info_order_status_text"
+            android:layout_alignParentRight="true"
+            android:text="待付款"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/divider_height"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <include layout="@layout/layout_super_recycler_view" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bill_info_but_layout"
+        android:paddingTop="@dimen/divider_height"
+        android:background="@color/main_hg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/but_height"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/but_retry"
+            android:background="@drawable/btn_blue_2_bg"
+            style="@style/bill_order_info_but"
+            android:text="复制重发"
+            android:textColor="@color/withe" />
+        <TextView
+            android:textColor="@color/withe"
+            android:id="@+id/but_cancel"
+            android:background="@drawable/shape_hg_gray_d4"
+            style="@style/bill_order_info_but"
+            android:text="取消订单" />
+        <TextView
+            android:id="@+id/but_amend"
+            android:background="@drawable/shape_hg_yellow"
+            style="@style/bill_order_info_but"
+            android:text="修改订单" />
+        <TextView
+            android:id="@+id/but_pay"
+            android:background="@drawable/shape_hg_red"
+            style="@style/bill_order_info_but"
+            android:text="立即支付" />
+    </LinearLayout>
+</LinearLayout>
