@@ -74,8 +74,6 @@ public class AddBackActivity extends BaseHttpActivity<AddBackD> {
         button.setVisibility(View.VISIBLE);
         button.setOnClickListener(this);
 
-
-
         viewDelegate.setOnClickListener(this, R.id.back_forget_pass, R.id.back_name, R.id.back_area);
         if (skipInfoEntity.index == 1) {
             viewDelegate.setRight("刪除", 0, new View.OnClickListener() {
